@@ -27,6 +27,7 @@ gem 'pg' # Postgres
 gem 'puma'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'responders'
 
 group :production do
   gem 'rails_12factor'
