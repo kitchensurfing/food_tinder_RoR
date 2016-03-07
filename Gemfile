@@ -26,6 +26,7 @@ gem 'omniauth-facebook', '= 3.0.0' # Facebook Login
 gem 'pg' # Postgres
 gem 'unicorn' # Web server
 gem 'turbolinks'
+gem 'uglifier'
 
 group :production do
   gem 'rails_12factor'
