@@ -24,7 +24,7 @@ gem 'mixpanel_client', require: false
 gem 'newrelic_rpm'
 gem 'omniauth-facebook', '= 3.0.0' # Facebook Login
 gem 'pg' # Postgres
-gem 'unicorn' # Web server
+gem 'puma'
 gem 'turbolinks'
 gem 'uglifier'
 
