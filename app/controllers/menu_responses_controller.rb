@@ -20,7 +20,7 @@ class MenuResponsesController < ApplicationController
   private
 
   def user
-    @user ||= User.first
+    @user ||= User.find(params[:user_id])
   end
 
   def next_menu
