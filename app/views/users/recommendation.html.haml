@@ -1,0 +1,10 @@
+%h1 Your recommendation is:
+- menu = @recommendation_info[:menus].sample
+%h2= menu.title
+
+%h3 Your profile:
+%table
+  - @user.user_profile_elements.each do |profile_element|
+    %tr
+      %td= profile_element.property.name.humanize.capitalize
+      %td= profile_element.value

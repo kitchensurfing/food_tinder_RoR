@@ -54,4 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :menu_responses, only: [:new, :create]
+  resources :users do
+    get 'recommendation'
+  end
 end

@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20160308163202) do
   create_table "menu_response_elements", force: :cascade do |t|
     t.integer "menu_response_id"
     t.integer "menu_property_value_id"
-    t.integer "value"
+    t.boolean "accepted"
   end
 
   create_table "menu_responses", force: :cascade do |t|

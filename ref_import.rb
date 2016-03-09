@@ -26,12 +26,12 @@ info_by_menu.each do |i|
     if tag_name =~ /Vegetarian/
       menu_untruths.add "Contains Meat"
     end
-    if tag_name =~ /Spicy/
-      menu_untruths.add "Not Spicy"
-    end
-    if tag_name =~ /Vegan/
-      menu_untruths.add "Not Vegan"
-    end
+    #if tag_name =~ /Spicy/
+      #menu_untruths.add "Not Spicy"
+    #end
+    #if tag_name =~ /Vegan/
+      #menu_untruths.add "Not Vegan"
+    #end
   end
   base_assumptions.each do |assumption|
     #Find property

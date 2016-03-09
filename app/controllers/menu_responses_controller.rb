@@ -1,12 +1,20 @@
 class MenuResponsesController < ApplicationController
   def new
     @menu = next_menu
+    if @menu.nil?
+      redirect_to user_recommendation_path(user: @user.id)
+    end
   end
 
   def create
     MenuResponse.create_from_menu_and_response(menu: last_menu, accepted: params[:accepted], user: user)
-    binding.pry
-    #user.update_profile
+    user.update_profile
+    @menu = next_menu
+    if @menu.nil?
+      redirect_to user_recommendation_path(user_id: @user.id)
+    else
+      render 'new'
+    end
   end
 
   private
