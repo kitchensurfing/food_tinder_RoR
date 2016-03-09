@@ -1,0 +1,8 @@
+%h1= @menu.title
+%h2 There should probably be a picture(or a bunch)
+%h3 And oh yeah, ingredients too.
+
+= link_to "Good Stuff", menu_responses_path(accepted: true, menu_id: @menu.id), method: :post
+= link_to "Nope, Definitely Not", menu_responses_path(accepted: false, menu_id: @menu.id), method: :post
+
+

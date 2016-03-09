@@ -301,6 +301,7 @@ GEM
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
     slop (3.6.0)
+    smarter_csv (1.1.0)
     spring (1.6.4)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -396,6 +397,7 @@ DEPENDENCIES
   sass
   sass-rails
   shoulda-matchers
+  smarter_csv
   spring-commands-rspec
   sunspot_solr
   thin

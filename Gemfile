@@ -28,6 +28,7 @@ gem 'puma'
 gem 'turbolinks'
 gem 'uglifier'
 gem 'responders'
+gem 'smarter_csv'
 
 group :production do
   gem 'rails_12factor'
